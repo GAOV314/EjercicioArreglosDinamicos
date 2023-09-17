@@ -1,37 +1,34 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Estudiante{
+public class Estudiante {
     //Atributos
-    private ArrayList<Examen>examenes = new ArrayList<Examen>();
+    private ArrayList<Examen>examenes;
     private String nombre;
     private String apellido;
     private int codigoUnico;
     private String fechaNacimiento;
     private String email;
 
-
-    public Estudiante() {
+    public Estudiante(){
+        Estudiante estudiante1 = new Estudiante();
     }
 
-
-    public Estudiante(Examen[] examenes, String nombre, String apellido, int codigoUnico, String fechaNacimiento,
-            String email) {
-        this.examenes = examenes;
+    public Estudiante(String nombre, String apellido, int codigoUnico, String fechaNacimiento, String email, ArrayList<Examen>examenes){
         this.nombre = nombre;
         this.apellido = apellido;
         this.codigoUnico = codigoUnico;
         this.fechaNacimiento = fechaNacimiento;
         this.email = email;
+        this.examenes = examenes;
     }
 
-
-    public Examen[] getExamenes() {
+    public ArrayList<Examen>getExamenes() {
         return examenes;
     }
 
 
-    public void setExamenes(Examen[] examenes) {
+    public void setExamenes(ArrayList<Examen> examenes) {
         this.examenes = examenes;
     }
 
@@ -88,13 +85,17 @@ public class Estudiante{
 
     @Override
     public String toString() {
-        return "Estudiante [examenes=" + Arrays.toString(examenes) + ", nombre=" + nombre + ", apellido=" + apellido
+        return "Estudiante [examenes=" + examenes + ", nombre=" + nombre + ", apellido=" + apellido
                 + ", codigoUnico=" + codigoUnico + ", fechaNacimiento=" + fechaNacimiento + ", email=" + email + "]";
     }
 
-    
-    
-    
-    
+
+
+    public ArrayList<Examen> agregarExamen(Examen examen1){
+        examenes.add(examen1);
+        return examenes;
+    }
+
+
 
 }
