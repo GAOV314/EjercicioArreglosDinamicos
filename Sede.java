@@ -4,16 +4,14 @@ import java.util.Scanner;
 public class Sede{
     private ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>();
     private String localizacion;
-    private int cantEstudiantes;
 
 //Constructor vacio
     public Sede(){
 
     }
 //Constructor
-    public Sede(String localizacion, int cantEstudiantes) {
+    public Sede(String localizacion) {
         this.localizacion = localizacion;
-        this.cantEstudiantes = cantEstudiantes;
     }
 
 //Gets y sets
@@ -37,16 +35,6 @@ public class Sede{
     }
 
 
-    public int getCantEstudiantes() {
-        return cantEstudiantes;
-    }
-
-
-    public void setCantEstudiantes(int cantEstudiantes) {
-        this.cantEstudiantes = cantEstudiantes;
-    }
-
-
     /*@Override
     public String toString() {
         return "Sede [estudiantes=" + estudiantes + ", localizacion=" + localizacion + ", cantEstudiantes="
@@ -59,17 +47,13 @@ public class Sede{
         estudiantes.add(estudiante1);
     }
     //Metodo para sacar promedio
-    public float moduloEstadisticaPromedio(){
-        for (Estudiante item : estudiantes){
-            for(Examen item2: item.getExamenes()){
-                float sumaNotas = item2.getNotaMateria();
+    //public void moduloEstadisticaPromedio(float suma){
+        //suma
+            //}
 
 
-            }
+        //}
 
-
-        }
-
-    }
+    //}
 
 }

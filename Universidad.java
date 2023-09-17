@@ -11,6 +11,12 @@ public class Universidad{
         this.sedes = sedes;
     }
 
-       
+    public ArrayList<Sede> getSedes() {
+        return sedes;
+    }
+    public void agregarSede(Sede sede2){
+        sedes.add(sede2);
+        System.out.println("Se ha agregado exitosamente la sede.");
+    }
 }
 
