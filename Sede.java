@@ -1,3 +1,9 @@
+/**
+ * Gadiel Amir Ocana Veliz
+ * 231270
+ * Programacion Orientada a Objetos
+ * Ejercicio Arreglos dinamicos
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 //Atributos
@@ -35,12 +41,15 @@ public class Sede{
     }
 
 
-    /*@Override
-    public String toString() {
-        return "Sede [estudiantes=" + estudiantes + ", localizacion=" + localizacion + ", cantEstudiantes="
-                + cantEstudiantes + "]";
-    }*/
-//Metodo para agregar un estudiante
+    /**
+     * Con los datos ingresados por el usuario crea un objeto de tipo estudiante y lo agrega a la lista de estudiantes de esa sede
+     * @param nombre
+     * @param apellido
+     * @param codigoUnico
+     * @param fechaNacimiento
+     * @param email
+     * @param examenes
+     */
     public void agregarEstudiante(String nombre, String apellido, int codigoUnico, String fechaNacimiento, String email, ArrayList<Examen> examenes){
 
         Estudiante estudiante1 = new Estudiante(nombre,apellido,codigoUnico,fechaNacimiento,email,examenes);

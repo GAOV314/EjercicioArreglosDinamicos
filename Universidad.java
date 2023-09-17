@@ -1,3 +1,9 @@
+/**
+ * Gadiel Amir Ocana Veliz
+ * 231270
+ * Programacion Orientada a Objetos
+ * Ejercicio Arreglos dinamicos
+ */
 import java.util.ArrayList;
 
 public class Universidad{
@@ -14,6 +20,11 @@ public class Universidad{
     public ArrayList<Sede> getSedes() {
         return sedes;
     }
+
+    /**
+     * Agrega una sede a la lista de sedes de la universidad
+     * @param sede2
+     */
     public void agregarSede(Sede sede2){
         sedes.add(sede2);
         System.out.println("Se ha agregado exitosamente la sede.");

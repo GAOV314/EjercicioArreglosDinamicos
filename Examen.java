@@ -1,5 +1,9 @@
-import java.util.ArrayList;
-
+/**
+ * Gadiel Amir Ocana Veliz
+ * 231270
+ * Programacion Orientada a Objetos
+ * Ejercicio Arreglos dinamicos
+ */
 public class Examen{
     //Atributos
     private String nombreMateria;

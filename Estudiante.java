@@ -1,3 +1,9 @@
+/**
+ * Gadiel Amir Ocana Veliz
+ * 231270
+ * Programacion Orientada a Objetos
+ * Ejercicio Arreglos dinamicos
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -81,21 +87,6 @@ public class Estudiante {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    @Override
-    public String toString() {
-        return "Estudiante [examenes=" + examenes + ", nombre=" + nombre + ", apellido=" + apellido
-                + ", codigoUnico=" + codigoUnico + ", fechaNacimiento=" + fechaNacimiento + ", email=" + email + "]";
-    }
-
-
-
-    public ArrayList<Examen> agregarExamen(Examen examen1){
-        examenes.add(examen1);
-        return examenes;
-    }
-
 
 
 }

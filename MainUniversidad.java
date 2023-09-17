@@ -1,9 +1,16 @@
+/**
+ * Gadiel Amir Ocana Veliz
+ * 231270
+ * Programacion Orientada a Objetos
+ * Ejercicio Arreglos dinamicos
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainUniversidad {
     /**
-     * @param args
+     * @param
      */
     public static void main(String[] args) {
 
@@ -13,7 +20,6 @@ public class MainUniversidad {
         Scanner consola = new Scanner(System.in);
 
         String menu = "\n----------Menu-----------\n1. Agregar Estudiante\n2. Usar modulo de estadistica\n3. Agregar Sede\n4. SALIR DEL PROGRAMA\n-------------------------";
-        //System.out.println("Seleccione una opcion: ");
         boolean condition = true;
 
         while (condition) {
@@ -90,6 +96,7 @@ public class MainUniversidad {
                 Sede sede2 = new Sede(localizacion1);
                 universidad1.agregarSede(sede2);
                 break;
+
             case 4:
                 System.out.println("Saliendo del programa...");
                 condition = false;
